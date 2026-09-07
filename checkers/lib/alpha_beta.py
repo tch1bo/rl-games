@@ -4,7 +4,7 @@ from typing import override
 import torch
 from draughts import BaseAgent, BaseBoard, Move
 
-from lib.models import MLPVNet
+from checkers.lib.models import MLPVNet
 
 
 @dataclass

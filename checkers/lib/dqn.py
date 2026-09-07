@@ -13,9 +13,9 @@ from pydantic import BaseModel, Field, PrivateAttr
 from torch.nn.functional import mse_loss
 from torch.utils.tensorboard import SummaryWriter
 
-from lib.log import get_logger
-from lib.models import NUM_CHANNELS, MLPQNet
-from lib.utils import (
+from checkers.lib.log import get_logger
+from checkers.lib.models import NUM_CHANNELS, MLPQNet
+from checkers.lib.utils import (
     DEFAULT_BOARD,
     BoardClassLiteral,
     benchmark_against_ab_engine,

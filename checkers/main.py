@@ -1,13 +1,13 @@
 from pydantic import BaseModel
 from pydantic_settings import BaseSettings, CliApp, CliSubCommand
 
-from lib.alpha_beta import AlphaBetaNet
-from lib.benchmark import BenchmarkArgs
-from lib.dqn import TrainArgs as DQNTrainArgs
-from lib.models import MLPVNet
-from lib.offline_lambda import TrainArgs as OfflineLambdaTrainArgs
-from lib.play import PlayArgs
-from lib.utils import DEFAULT_BOARD, choose_board_class
+from checkers.lib.alpha_beta import AlphaBetaNet
+from checkers.lib.benchmark import BenchmarkArgs
+from checkers.lib.dqn import TrainArgs as DQNTrainArgs
+from checkers.lib.models import MLPVNet
+from checkers.lib.offline_lambda import TrainArgs as OfflineLambdaTrainArgs
+from checkers.lib.play import PlayArgs
+from checkers.lib.utils import DEFAULT_BOARD, choose_board_class
 
 
 class DebugArgs(BaseModel):

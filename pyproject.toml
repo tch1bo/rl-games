@@ -13,6 +13,7 @@ dependencies = [
     "setuptools<81",
     "structlog>=26.1.0",
     "tensorboard>=2.20.0",
+    "torch>=2.13.0",
     "tqdm>=4.68.3",
     "types-tqdm>=4.68.0.20260608",
 ]
@@ -26,9 +27,13 @@ exclude = [".venv"]
 follow_imports = "silent"
 cache_dir = ".mypy_cache"
 
+[[tool.uv.index]]
+name = "pytorch-cu132"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true
+
 [tool.pyright]
 exclude = [".venv"]
-
 
 [dependency-groups]
 dev = [

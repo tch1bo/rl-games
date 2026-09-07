@@ -1,8 +1,8 @@
 from draughts import Benchmark
 from pydantic import BaseModel, Field
 
-from lib.log import get_logger
-from lib.utils import (
+from checkers.lib.log import get_logger
+from checkers.lib.utils import (
     DEFAULT_BOARD,
     BoardClassLiteral,
     EngineIdAndDepth,

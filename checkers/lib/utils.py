@@ -17,8 +17,8 @@ from draughts import (
 from draughts.benchmark import BenchmarkStats
 from pydantic import BaseModel, model_validator
 
-from lib.alpha_beta import AlphaBetaNet
-from lib.models import MLPVNet
+from checkers.lib.alpha_beta import AlphaBetaNet
+from checkers.lib.models import MLPVNet
 
 EngineIdT = Literal["random", "alpha-beta"] | Path
 BoardClassLiteral = Literal["russian", "standard"]

@@ -1,7 +1,7 @@
 from draughts import Server
 from pydantic import BaseModel
 
-from lib.utils import (
+from checkers.lib.utils import (
     DEFAULT_BOARD,
     BoardClassLiteral,
     EngineIdAndDepth,
