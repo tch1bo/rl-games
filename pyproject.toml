@@ -21,6 +21,10 @@ dependencies = [
 [tool.ruff.lint]
 select = ["I", "F401"]
 
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["wordle/test"]
+
 [tool.mypy]
 explicit_package_bases = true
 exclude = [".venv"]
@@ -41,5 +45,6 @@ dev = [
     "mypy>=2.1.0",
     "pre-commit>=4.6.0",
     "pyright>=1.1.410",
+    "pytest>=9.1.1",
     "ruff>=0.15.18",
 ]
